@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add Product - Campus Cycle</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="addproduct.css" />
+</head>
+<body>
+  <header>
+    <div class="heading">
+      <h1>Campus Cycle</h1>
+      <h5>Campus Cycle is for Students to Sell, Exchange or Donate Used Items...</h5>
+      <hr />
+    </div>
+    <div id="Navbar">
+      <div class="nav-top">
+        <a id="logo">campuscycle.com</a>
+        <div class="search-container">
+          <input type="text" placeholder="Search here.." />
+          <button>Search</button>
+        </div>
+      </div>
+      <nav>
+        <a href="homepage1.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="profile.html">Profile</a>
+        <a href="addproduct.html">Add Your Product</a>
+        <a href="editlisting.html">Edit Listing</a>
+        <a href="wallet.html">Wallet</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="admin.html">Admin Panel</a>
+        <a href="faq.html">FAQs</a>
+        <!-- Logout Button -->
+        <a href="logout.php" style="color: red; font-weight: bold;">Logout</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <form class="form-box">
+      <h2>Add Product</h2>
+      <input type="text" placeholder="Product Name" required /><br />
+      <input type="text" placeholder="Category (e.g., Books, Electronics)" required /><br />
+      <textarea placeholder="Description" rows="4" required></textarea><br />
+      <input type="number" placeholder="Price (₹)" required /><br />
+      <label>
+        <input type="checkbox" /> Mark as Donation (Free)
+      </label><br />
+      <input type="file" accept="image/*" /><br />
+      <button type="submit">Submit Product</button>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <p>© 2023 Campus Cycle. All rights reserved.</p>
+  </footer>
+</body>
+</html>

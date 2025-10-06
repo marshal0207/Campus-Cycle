@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campus Cycle</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style1.css" />
+   
+</head>
+<body>
+
+  <header>
+    <div class="heading">
+      <h1>Campus Cycle</h1>
+      <h5>Campus Cycle is for Students to Sell, Exchange or Donate Used Items...</h5>
+      <hr />
+    </div>
+    <div id="Navbar">
+      <div class="nav-top">
+        <a id="logo">campuscycle.com</a>
+        <div class="search-container">
+          <input type="text" placeholder="Search here.." />
+          <button>Search</button>
+        </div>
+      </div>
+      <nav>
+        <a href="homepage1.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="addproduct.html">Add Your Product</a>
+        <a href="editlisting.html">Edit Listing</a>
+        <a href="wallet.html">Wallet</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="admin.html">Admin Panel</a>
+        <a href="faq.html">FAQs</a>
+        
+        <!-- Login Button (added before Logout) -->
+        <a href="login.html" style="color: green; font-weight: bold;">Login</a>
+        
+        <!-- Logout Button -->
+        <a href="logout.php" style="color: red; font-weight: bold;">Logout</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h4>
+        Campus Cycle is a platform for students to buy, sell, exchange, or donate used items.
+        Whether you're looking for textbooks, electronics, or furniture — find it here!
+      </h4>
+    </section>
+
+    <section class="slider-section">
+      <div class="slider" id="slider">
+        <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c');">
+          <div class="slide-caption">Welcome to Campus Cycle!</div>
+        </div>
+        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1626785774573-4b799315345d');">
+          <div class="slide-caption">Buy, Sell, Exchange or Donate</div>
+        </div>
+        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4');">
+          <div class="slide-caption">Find the best deals on campus</div>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <span class="slider-dot active"></span>
+        <span class="slider-dot"></span>
+        <span class="slider-dot"></span>
+      </div>
+    </section>
+
+    <div class="product-list">
+      <div class="product">
+        <div class="img" style="background-image: url('91KJqu5cUKL._UF1000,1000_QL80_.jpg');"></div>
+        <h4>Text Book-Biology</h4>
+        <p>Used book in good condition.</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <div class="img" style="background-image: url('shopping.webp');"></div>
+        <h4>Arduino Circuit</h4>
+        <p>Used circuit in working condition.</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <div class="img" style="background-image: url('71PMStpConL._AC_UF1000,1000_QL80_.jpg');"></div>
+        <h4>Book of days</h4>
+        <p>Second-hand reading book.</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <div class="img" style="background-image: url('OIP.webp');"></div>
+        <h4>Textbook-Maths</h4>
+        <p>10th Grade Textbook.</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <div class="img" style="background-image: url('OIP (1).webp');"></div>
+        <h4>C++ Textbook</h4>
+        <p>Used but in very good condition.</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <div class="img" style="background-image: url('41a4CcXfN4L.jpg');"></div>
+        <h4>C Textbook</h4>
+        <p>For specialization only.</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <div class="img" style="background-image: url('o8g2bEtp4dfmDPTdjavRGf-1200-80.jpg');"></div>
+        <h4>Laptop</h4>
+        <p>Complete Working Condition.</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <div class="img" style="background-image: url('bottle.jpg');"></div>
+        <h4>Water Bottle</h4>
+        <p>Stainless steel bottle, leak-proof.</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <div class="img" style="background-image: url('mouse.avif');"></div>
+        <h4>Wireless Mouse</h4>
+        <p>Compact and responsive wireless mouse.</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <div class="img" style="background-image: url('kit.jpg');"></div>
+        <h4>Stationery Kit</h4>
+        <p>Includes pens, pencils, ruler, eraser.</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Leaderboard Section -->
+    <section class="data-section">
+      <h2>Leaderboard</h2>
+      <div id="leaderboard-list"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2023 Campus Cycle. All rights reserved.</p>
+    <div>
+      <h3>Contact Us:</h3>
+      <p>Mobile: 9328554406</p>
+      <p>Email: support@campuscycle.com</p>
+      <p>Address: Main Campus, University Grounds</p>
+    </div>
+  </footer>
+
+  <script>
+  // Slider logic
+  const slides = document.querySelectorAll('.slide');
+  const dots = document.querySelectorAll('.slider-dot');
+  let current = 0;
+
+  function showSlide(idx) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === idx);
+      dots[i].classList.toggle('active', i === idx);
+    });
+    current = idx;
+  }
+
+  dots.forEach((dot, idx) => {
+    dot.addEventListener('click', () => showSlide(idx));
+  });
+
+  setInterval(() => {
+    let next = (current + 1) % slides.length;
+    showSlide(next);
+  }, 3500);
+
+  // Leaderboard logic
+  const leaderboardData = [
+    { "rank": 1, "name": "Aarav Patel", "points": 1200, "branch": "Computer" },
+    { "rank": 2, "name": "Meera Shah", "points": 1100, "branch": "IT" },
+    { "rank": 3, "name": "Rohan Singh", "points": 950, "branch": "Mechanical" },
+    { "rank": 4, "name": "Priya Patel", "points": 900, "branch": "Electrical" }
+  ];
+
+  function renderLeaderboard(data) {
+    const leaderboardList = document.getElementById('leaderboard-list');
+    leaderboardList.innerHTML = `
+      <div style="display: flex; font-weight: bold; color: #f08804; margin-bottom: 10px;">
+        <span style="width: 60px;">Rank</span>
+        <span style="flex: 1;">Name</span>
+        <span style="width: 100px;">Points</span>
+        <span style="width: 120px;">Branch</span>
+      </div>
+    `;
+    data.forEach(entry => {
+      leaderboardList.innerHTML += `
+        <div style="display: flex; background: #181818; margin-bottom: 8px; padding: 10px 14px; border-radius: 8px;">
+          <span style="width: 60px;">${entry.rank}</span>
+          <span style="flex: 1;">${entry.name}</span>
+          <span style="width: 100px; color: #f08804;">${entry.points}</span>
+          <span style="width: 120px;">${entry.branch}</span>
+        </div>
+      `;
+    });
+  }
+
+  renderLeaderboard(leaderboardData);
+</script>
+</body>
+</html>

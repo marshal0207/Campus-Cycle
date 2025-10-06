@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Leaderboard - Campus Cycle</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="leaderboard.css" />
+</head>
+<body>
+  <header>
+    <div class="heading">
+      <h1>Campus Cycle</h1>
+      <h5>Campus Cycle is for Students to Sell, Exchange or Donate Used Items...</h5>
+      <hr />
+    </div>
+    <div id="Navbar">
+      <div class="nav-top">
+        <a id="logo">campuscycle.com</a>
+        <div class="search-container">
+          <input type="text" placeholder="Search here.." />
+          <button>Search</button>
+        </div>
+      </div>
+      <nav>
+        <a href="homepage1.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="addproduct.html">Add Your Product</a>
+        <a href="editlisting.html">Edit Listing</a>
+        <a href="wallet.html">Wallet</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="admin.html">Admin Panel</a>
+        <a href="faq.html">FAQs</a>
+        <!-- Logout Button -->
+        <a href="logout.php" style="color: red; font-weight: bold;">Logout</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="leaderboard-box">
+      <h2>Leaderboard</h2>
+      <table class="leaderboard-table">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Name</th>
+            <th>Items Donated</th>
+            <th>Points</th>
+          </tr>
+        </thead>
+        <tbody id="leaderboard-body">
+          <!-- Leaderboard rows will be inserted here by JS -->
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2023 Campus Cycle. All rights reserved.</p>
+    <div>
+      <h3>Contact Us:</h3>
+      <p>Mobile: 9328554406</p>
+      <p>Email: support@campuscycle.com</p>
+      <p>Address: Main Campus, University Grounds</p>
+    </div>
+  </footer>
+
+  <script>
+  // JSON data for leaderboard
+  const leaderboardData = [
+    { "rank": 1, "name": "Joshi Shivam", "items": 15, "points": 150 },
+    { "rank": 2, "name": "Godhani Marshal", "items": 12, "points": 120 },
+    { "rank": 3, "name": "Kundariya Dhruvi", "items": 10, "points": 100 },
+    { "rank": 4, "name": "Vekariya Ved", "items": 8, "points": 80 },
+    { "rank": 5, "name": "Vekariya Dhrumi", "items": 6, "points": 60 }
+  ];
+
+  // Render leaderboard from JSON
+  const tbody = document.getElementById('leaderboard-body');
+  tbody.innerHTML = '';
+  leaderboardData.forEach(entry => {
+    const row = document.createElement('tr');
+    row.innerHTML = `
+      <td>${entry.rank}</td>
+      <td>${entry.name}</td>
+      <td>${entry.items}</td>
+      <td>${entry.points}</td>
+    `;
+    tbody.appendChild(row);
+  });
+</script>
+</body>
+</html>
