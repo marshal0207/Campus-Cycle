@@ -1,9 +1,9 @@
 <?php
 // Database configuration
-$host = "localhost";     // usually localhost
-$user = "root";          // your DB username
-$pass = "";              // your DB password
-$dbname = "campuscycle"; // your database name
+$host = "sql12.freesqldatabase.com";     // usually localhost
+$user = "sql12801706";          // your DB username
+$pass = "58d7sWvpga";              // your DB password
+$dbname = "sql12801706"; // your database name
 
 // Create connection
 $conn = new mysqli($host, $user, $pass, $dbname);
@@ -16,3 +16,4 @@ if ($conn->connect_error) {
 // Optional: set charset to utf8 for proper encoding
 $conn->set_charset("utf8");
 ?>
+
