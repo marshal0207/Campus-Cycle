@@ -1,7 +1,10 @@
 # Use the official PHP Apache image
 FROM php:8.2-apache
 
-# Copy all project files into the web directory
+# Install mysqli and pdo_mysql extensions
+RUN docker-php-ext-install mysqli pdo pdo_mysql
+
+# Copy all project files to the Apache web root
 COPY . /var/www/html/
 
 # Give proper permissions
